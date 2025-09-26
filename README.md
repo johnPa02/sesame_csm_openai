@@ -1,6 +1,6 @@
 # CSM-1B TTS API
 
-An OpenAI-compatible Text-to-Speech API that harnesses the power of Sesame's Conversational Speech Model (CSM-1B). This API allows you to generate high-quality speech from text using a variety of consistent voices, compatible with systems like OpenWebUI, ChatBot UI, and any platform that supports the OpenAI TTS API format.
+An OpenAI-compatible Text-to-Speech API that harnesses the power of Sesame's Conversational Speech Model (CSM-1B). This API allows you to generate high-quality speech from text using a variety of consistent voices, compatible with systems like OpenWebUI, and any platform that supports the OpenAI TTS API format.
 
 ## Features
 
