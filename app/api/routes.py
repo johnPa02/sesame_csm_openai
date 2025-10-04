@@ -66,7 +66,7 @@ def get_speaker_id(app_state, voice):
     # Default to alloy
     return 0
 
-@router.post("/audio/speech", tags=["Audio"], response_class=Response)
+@router.post("/audio/speech/non-stream", tags=["Audio"], response_class=Response)
 async def generate_speech(
     request: Request,
     speech_request: SpeechRequest,
@@ -234,7 +234,7 @@ async def generate_speech(
         logger.error(f"Error in text_to_speech: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
-@router.post("/audio/speech/stream", tags=["Audio"])
+@router.post("/audio/speech", tags=["Audio"])
 async def stream_speech(request: Request, speech_request: SpeechRequest):
     """Stream audio in real-time as it's being generated."""
     # Check if model is loaded
